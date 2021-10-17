@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- (external) Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-+UYTD5L/bU1sgAfWA0ELK5RlQ811q8wZIocqI7+K0Lhh8yVdIoAMEs96wJAIbgFvzynPm36ZCXtkydxu1cs27w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scripts -->
+    <script type="module" async src="../static/stats/charts.js"></script>
+    <script type="module" async src="../static/stats/testData.js"></script>
+    <script async src="../static/ls-modal.js"></script>
+
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="../static/main.css" /> -->
+    <link rel="stylesheet" href="../static/stats/charts.css" />
+
+    <!-- external -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Chart</title>
+  </head>
+  <body>
+    <div class="back-wrapper">
+      <a href="./index.html" style="font-size: 0.75rem">back to form</a>
+    </div>
+
+    <div class="chart-container">
+      <div class="range-wrapper">
+        <div class="range-wrapper__header">Wybierz zakres dat</div>
+        <div class="range-wrapper__dates">
+          <div>
+            <label for="date-one">Od</label>
+            <input type="date" id="range-date-one" min="2021-09-16" />
+          </div>
+          <!-- <div>→</div> -->
+          <div>
+            <label for="date-two">Do</label>
+            <input type="date" id="range-date-two" min="2021-09-16" />
+          </div>
+          <button class="reset-range">reset</button>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="chart"></canvas>
+      </div>
+
+      <div class="chart-options">
+        <div class="chart-options__each">
+          <input type="radio" name="chartData" id="chartData__duration" />
+          <label for="chartData__duration">xxx</label>
+        </div>
+        <div class="chart-options__each">
+          <input type="radio" name="chartData" id="chartData__language" />
+          <label for="chartData__language">xxx</label>
+        </div>
+        <div class="chart-options__each">
+          <input type="radio" name="chartData" id="chartData__system" />
+          <label for="chartData__system">xxx</label>
+        </div>
+        <div class="chart-options__each">
+          <input type="radio" name="chartData" id="chartData__who" />
+          <label for="chartData__who">xxx</label>
+        </div>
+        <div class="chart-options__each">
+          <input
+            type="radio"
+            name="chartData"
+            id="chartData__calls-number"
+            checked
+          />
+          <label for="chartData__calls-number">xxx</label>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <a href="http://172.17.2.94:5000/get_all_records" style="font-size: 0.75rem"
+      >get db (tmp)</a
+    >
+  </body>
+</html>
