@@ -16,4 +16,4 @@ Night-mode available:
 
 This code is presented for demonstrational purposes and does not include any confidential information.
 
-The project has been separated into two classes - for the form itself (_/static/script.js_) as well as for the chart (_/static/stats/charts.js_). Chart reaches for all the collected data from the database.
+The project has been separated into two classes - for the form itself ([*/static/script.js*](https://github.com/lukmrv/questionnaire-tool/blob/master/static/script.js)) as well as for the chart ([*/static/stats/charts.js*](https://github.com/lukmrv/questionnaire-tool/blob/master/static/stats/charts.js)). Chart reaches for all the collected data from the database.
