@@ -8,6 +8,8 @@ After providing all the answers the summary modal appears, with option to submit
 
 ![calendar](./questionnaire-day-modal.jpg)
 
+![calendar](./chart.jpg)
+
 Night-mode available:
 
 ![calendar](./questionnaire-night.jpg)
